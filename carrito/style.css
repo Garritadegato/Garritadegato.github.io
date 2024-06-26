@@ -1,0 +1,24 @@
+.bodycar {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.product, .cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.buttonpaya {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonpaya:hover {
+    background-color: #218838;
+}
+
+
