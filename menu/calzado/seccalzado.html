@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion de calzado</title>
+    <link rel="stylesheet" href="\Proyecto/style.css">
+    
+</head>
+<body class="imgbodysub">
+    <header>
+        <!---logo--->
+          <div class="header-section container">
+             <a href="\Proyecto\menu\menu/Menu.html"><img src="\Proyecto\imagenes/menu.jpg" class="imgmenu"></a> 
+             <a href="/Proyecto/index.html"> <img class="logo" src="\Proyecto\imagenes/logo.jpg" alt=""></a>
+            <h1 class="titlog"><img src="\Proyecto\imagenes/titulo.jpg" class="titlogo"></h1>
+            <!---carrito de compras--->
+              <div>
+                  <img onclick="showCart(this)" class="cart" src="\Proyecto\imagenes/carrito.jpg" alt="">
+                  <p class="count-product">0</p>
+              </div>
+              <div class="cart-products" id="products-id">
+                  <p class="close-btn" onclick="closeBtn()">X</p>
+                  <h3>Recien Agrgados</h3>
+                
+                  <div class="card-items">
+                    
+                  </div>
+                
+                  <h2>Total: $<strong class="price-total">0</strong></h2>
+                  <button class="link-button re" onclick="pago()">Pagar</button>
+                  <script>
+                      function pago() {
+                          window.location.href ="/Proyecto/carrito/cart.html"
+                      }
+                  </script>
+  
+      <script>
+          function pagina() {
+              window.location.href ="terminal.html"
+          }
+      </script>
+            <br><br>
+              </div>
+          </div>
+      </header>
+
+    <script>
+        function buscar() {
+            var query = document.getElementById("search").value.toLowerCase();
+            if (query === "pantalones") {
+                window.location.href = "/Proyecto/menu/pantalon/secpantalon.html";}
+            else if (query === "Pantalon") {
+                window.location.href = "/Proyecto/menu/pantalon/secpantalon.html";}
+            else if(query === "accesorios"){
+                window.location.href = "/Proyecto/menu/accesorios/secaccesorios.html"}
+            else if (query === "vestido") {
+                window.location.href = "/Proyecto/menu/vestidos/secvestidos.html";}
+            else if(query === "vestidos"){
+                window.location.href = "/Proyecto/menu/vestidos/secvestidos.html"}
+            else if (query === "Accesorio") {
+                window.location.href = "/Proyecto/menu/accesorios/secaccesorios.html";}
+            else if (query === "pijamas") {
+                window.location.href = "/Proyecto/menu/pijamas/secpijamas.html";}
+            else if(query === "pijama"){
+                window.location.href = "/Proyecto/menu/pijamas/secpijamas.html"}
+            else if (query === "Playera") {
+                window.location.href = "/Proyecto/menu/playera/secplayeras.html";}
+            else if(query === "playeras"){
+                window.location.href = "/Proyecto/menu/playera/secplayeras.html"}
+            else if(query === "Zapatos"){
+                window.location.href = "/Proyecto/menu/calzado/seccalzado.html"}
+            else if(query === "calzado"){
+                window.location.href = "/Proyecto/menu/calzado/seccalzado.html"}
+            else if(query === "sudaderas"){
+                window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+            else if(query === "Sudadera"){
+                window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+            else if(query === "pagina principal"){
+                window.location.href = "/Proyecto/index.html"}
+            else if(query === "capas"){
+                    window.location.href = "/Proyecto/menu/capas/seccapas.html"}
+            else if(query === "capa"){
+                    window.location.href = "/Proyecto/menu/capasa/seccapas.html"}
+             
+            else {alert("Lo sentimos, no se encontraron resultados para tu búsqueda.");}
+        }
+        </script>
+        <input type="text" id="search" placeholder="Introduce tu búsqueda" class="btnbuscar divbusc btnins">
+        <button onclick="buscar()" class="btnbuscar separ colblanco">Buscar</button>
+
+
+
+    <section class="container">
+        <div class="products">
+          
+            <div class="carts">
+                <div>
+                    <img src="\Proyecto\imagenes\calzado/cal1.jpeg" alt="">
+                </div>
+              <p>$<span>400</span></p>
+                <p class="title">Tenis blancos Cara de Gato</p>
+                <a href="" data-id="11" class="btn-add-cart" onclick="addToCart('Tenis blancos Cara de Gato',400)">Agregar</a><br><br><br>
+               <button class="link-button" onclick="zap1()">Ver Producto</button>
+
+    <script>
+        function zap1() {
+            window.location.href ="/Proyecto/menu/calzado/calzado1.html"
+        }
+    </script>
+            </div>
+          
+            <div class="carts">
+              
+                <div>
+                  <img src="\Proyecto\imagenes\calzado/cal2.jpeg" alt="">
+                </div>
+              <p>$<span>400</span></p>
+                <p class="title"> Tenis beige de Gato </p>
+                <a href="" data-id="12" class="btn-add-cart" onclick="addToCart('Tenis beige de Gato',400)">Agregar</a><br><br><br>
+               <button class="link-button" onclick="zap2()">Ver Producto</button>
+               <script>
+                function zap2() {
+                    window.location.href ="/Proyecto/menu/calzado/calzado2.html"
+                }
+            </script>
+
+            </div>    
+
+        </div>
+    </div>
+</section>
+
+<script>
+    function showCart(x){
+        document.getElementById("products-id").style.display = "block";
+    }
+    function closeBtn(){
+         document.getElementById("products-id").style.display = "none";
+    }
+
+</script>
+  <script src="\Proyecto\carrito/script.js"></script>   
+<script src="\Proyecto/custom.js"></script>
+</body>
+</html>

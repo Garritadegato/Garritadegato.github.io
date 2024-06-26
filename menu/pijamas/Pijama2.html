@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="author" content="Aida Jazmin Benitez Rivera">
+  <title>Pijama2</title>
+  <link rel="stylesheet" href="\Proyecto/style.css">
+</head>
+<body class="body">
+  <header>
+    <!---logo--->
+      <div class="header-section container">
+         <a href="\Proyecto\menu\menu/Menu.html"><img src="\Proyecto\imagenes/menu.jpg" class="imgmenu"></a> 
+         <a href="/Proyecto/index.html"> <img class="logo" src="\Proyecto\imagenes/logo.jpg" alt=""></a>
+        <h1 class="titlog"><img src="\Proyecto\imagenes/titulo.jpg" class="titlogo"></h1>
+        <!---carrito de compras--->
+          <div>
+            <a href="\Proyecto\carrito/cart.html"><img class="cart" src="\Proyecto\imagenes/carrito.jpg" alt=""></a>
+            
+
+
+        <br><br>
+          </div>
+      </div>
+  </header>
+  <div>
+    <img  src="\Proyecto\imagenes\pijamas/pijama2.jpeg" alt="Pijama" class="imgproducto margtop">
+    <h1 class="h1 txt-center margtoptit" >Pijama <br>estampado <br>de gato <br><br>$350.00</h1>
+  </div>
+  <p class="titcolor">COLOR:</p>
+
+  <div class="color-selector colores">
+    <div class="color-option btnrosap" onclick="selectColor(this)"></div>
+    <div class="color-option btncafe" onclick="selectColor(this)"></div>
+    <div class="color-option btngris" onclick="selectColor(this)"></div>
+    
+</div>
+
+<script>
+    function selectColor(element) {
+        // Remove the 'selected' class from all options
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.classList.remove('selected');
+        });
+        
+        // Add the 'selected' class to the clicked option
+        element.classList.add('selected');
+    }
+</script>
+
+
+    <p class="tittallas">TALLAS:</p>
+ 
+
+      <select class="select">
+      <option value="html"></option>
+      <option value="html">CH</option>
+      <option value="html">M</option>
+      <option value="html">G</option>
+      <option value="html">EG</option>
+      </select>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="container">
+    <div class="products">
+      <div class="carts btnagcen">
+        <a href=""data-id="42" class="btn-add-cart" onclick="addToCart('Pijama estampado de Gato',350)">agregar</a>
+      </div>
+    </div>
+  </section>
+<script src="\Proyecto\carrito/script.js"></script>
+    <script src="script.js"></script>  
+  </body>
+</html>
+    
